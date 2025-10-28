@@ -14,8 +14,8 @@ public class AuthResource implements AuthController {
 
     @Override
     public ResponseEntity<TokenOut> register(RegisterIn registerIn) {
-        String token = authService.register(AuthParser.toRegister(registerIn));
-        
+        String token = authService.register(registerIn);
+                
         return ResponseEntity
             .created(ServletUriComponentsBuilder.fromCurrentRequest().build().toUri())
             .body(AuthParser.toTokenOut(token));

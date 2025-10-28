@@ -25,7 +25,7 @@ public class AuthService {
     @Autowired
     private JwtService jwtService;
 
-    public String register(Register register) {
+    public String register(RegisterIn register) {
         logger.debug("Registering account: {} with email: {}", 
             register.name(), register.email());
 

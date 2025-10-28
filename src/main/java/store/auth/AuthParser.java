@@ -2,10 +2,10 @@ package store.auth;
 
 public class AuthParser {
 
-    public static Register toRegister(RegisterIn in) {
+    public static RegisterIn toRegister(RegisterIn in) {
         if (in == null) return null;
         
-        return Register.builder()
+        return RegisterIn.builder()
             .name(in.name())
             .email(in.email())
             .password(in.password())
