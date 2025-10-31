@@ -15,7 +15,7 @@ spec:
       containers:
       - name: auth-service
         image: deenaelorra/auth:latest
-        imagePullPolicy: Never
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
         env:

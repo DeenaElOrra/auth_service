@@ -1,0 +1,5 @@
+store/auth/AuthResource.class
+store/auth/AuthService.class
+store/auth/AuthApplication.class
+store/auth/JwtService.class
+store/auth/AuthParser.class
